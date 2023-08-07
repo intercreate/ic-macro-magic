@@ -3,9 +3,6 @@
 # Copyright (c) 2023 Intercreate, Inc.
 # Author: J.P. Hutchins <jp@intercreate.io>
 
-cmake_minimum_required(VERSION 3.20)
-project(tests)
-
 enable_testing()
 
 include(FetchContent)

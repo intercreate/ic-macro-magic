@@ -15,6 +15,8 @@ target_include_directories(${PROJECT_NAME} INTERFACE include)
 if(CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
     # We're in the root, define additional targets for developers.
 
+    add_subdirectory(tests)
+
     # generate a package for distribution
     # reference: https://www.foonathan.net/2022/06/cmake-fetchcontent/
     set(package_files include/ CMakeLists.txt LICENSE)

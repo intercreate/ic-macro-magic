@@ -5,11 +5,11 @@
 #
 # Instead of:
 #   
-#   cmake -Bbuild && cmake --build build --clean-first && ctest -V --test-dir build
+#   cmake -B build && cmake --build build --clean-first && ctest --test-dir build/tests -V
 # 
 # Use:
 #
-#   cmake -S test.cmake
+#   cmake -P test.cmake
 #
 
 execute_process(
@@ -30,7 +30,7 @@ if(NOT ${res} STREQUAL "0")
     message(FATAL_ERROR "CMake build step failed.")
 endif()
 
-execute_process(COMMAND ctest "-V" "--test-dir" "build"
+execute_process(COMMAND ctest "-V" "--test-dir" "build/tests"
     RESULT_VARIABLE res
     WORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}
 )

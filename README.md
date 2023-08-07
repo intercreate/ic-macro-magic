@@ -89,7 +89,7 @@ You can pin to a version by using the URL from the release page, e.g. https://gi
 
 # Tests
 
-`cmake -P tests/test.cmake`
+`cmake -P test.cmake`
 
 # Lint
 
