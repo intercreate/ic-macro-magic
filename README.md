@@ -78,7 +78,7 @@ The easiest way to use this library in your project is to use CMake's [FetchCont
 include(FetchContent)
 
 FetchContent_Declare(ic_macro_magic
-    URL https://github.com/intercreate/ic-macro-magic/releases/download/latest/ic_macro_magic.zip
+    URL https://github.com/intercreate/ic-macro-magic/releases/latest/download/ic_macro_magic.zip
 )
 FetchContent_MakeAvailable(ic_macro_magic)
 
